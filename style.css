@@ -1,0 +1,464 @@
+/*CSS Background*/
+.bg1{
+    background-image: url(gambar_skripsi/bg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.bgadmin{
+    background-image: url(gambar_skripsi/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/*CSS untuk loginuser dan admin dan register*/
+.switchau{
+    position: relative;
+    width: 80px;
+    height: 20px;
+    box-shadow: none;
+    background: none;
+    margin-left: 40%;
+}
+.switcher{
+    height: 20px;
+    border-radius:5px 10px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    padding: 1px;
+    color: white;
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+}
+.switcher.front{
+    background-color: chocolate;
+}
+.switcher.back{
+    transform: rotateY(-180deg);
+    background-color: chocolate;
+}
+.switcher-a{
+    text-decoration: none;
+    font-family: 'Lucida Sans';
+    color: white;
+}
+.switchau:hover .switcher.front{
+    transform: rotateY(180deg);
+}
+.switchau:hover .switcher.back{
+    transform: rotateY(0deg);
+}
+.boxlogin{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding:20px 25px;
+    width: 300px;
+    box-shadow: 0 0 20px black;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.8) ;
+}
+.boxlogin h1{
+    font-family: 'Lucida Sans';
+    color: chocolate;
+    margin-bottom: -1px;
+}
+.boxinput input{
+    width: calc(100%-2px);
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid chocolate;
+    color: chocolate;
+    font-size: 12pt;
+    margin-top: 10px;
+}
+.boxinput button{
+    width: 100%;
+    height: 40px;
+    padding: 5px 0;
+    border: 0;
+    border-radius: 20px;
+    background-color: chocolate;
+    color: white;
+    font-size: 13pt;
+    font-family: monospace;
+}
+.boxinput button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    transition: all 0.5s;
+}
+.boxregister:hover{
+    cursor: pointer;
+}
+.boxregister a{
+    color: white;
+    font-size: 13pt;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-family: monospace;
+    border: 0;
+    border-radius: 20px;
+    background-color: chocolate;
+    padding: 10px 112px;
+}
+.boxregister a:hover{
+    box-shadow: 0 0 10px white;
+    transition: all 0.5s;
+    padding: 8px 110px;
+}
+.teksbacklogin{
+    color: chocolate;
+}
+.teksbacklogin a{
+    text-decoration: none;
+    color: aqua;
+}
+/*CSS untuk index/home*/
+.boxhome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding:20px 25px;
+    width: 750px;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    border-radius: 20px;  
+}
+.loginhome a{
+    width: 150px;
+    height: 100px;
+    border: 0;
+    border-radius: 20px 10px;
+    background-color: chocolate;
+    padding: 10px 20px;  
+    cursor: pointer;
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+}
+.loginhome a:hover{
+    transition: all 0.8s;
+    box-shadow: 0 0 20px brown;
+    color: sandybrown;
+    background-color: saddlebrown;
+}
+.text-welcome{
+    color: chocolate;
+    font-size: 18pt;
+    font-family: 'Lucida Sans';
+    text-transform: uppercase;
+}
+/*CSS untuk layouting template user*/
+.navbaruser{
+    z-index: 10;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    height: 80px;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.navbaruser h1{
+    position: relative;
+    top: 0%;
+    left: 5%;
+    color: chocolate;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.navbaruser a{
+    position: relative;
+    text-decoration: none;
+    color: chocolate;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.navbaruser a:hover{
+    background-color: rgba(0, 0, 0, 0.495);
+    transition: all 0.s;
+}
+.aktif{
+    top: -50%;
+    left: 30%;
+    padding: 35px;
+    background-color: rgb(0, 0, 0);
+}
+.navprofil{
+    top: -65%;
+    left: 30%;
+    padding: 32px;
+}
+.navkonsul{
+    top: -65%;
+    left: 30%;
+    padding: 32px;
+}
+.navriwayat{
+    top: -65%;
+    left: 30%;
+    padding: 32px;
+}
+.btnlogout{
+    position: relative;
+    padding: 10px;
+    left:520pt;
+    top: -35pt;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.495);
+    border-radius: 10px;
+    color: chocolate;
+    text-transform: uppercase;
+    font-size: 14pt;
+}
+.btnlogout:hover{
+    box-shadow: 0 0 5px white;
+}
+.kontenuser{
+    z-index: 1;
+    padding-top: 50px;
+    color: chocolate;
+}
+/*CSS Profil User*/
+.isikontenprofil{
+    position:relative;
+    text-align:left;
+    margin: 50pt 300pt;
+    padding: 10px;
+    width: 500px;
+    background-color:rgba(0,0,0,0.8);
+    border-radius: 10%;
+    box-shadow: 0 0 10px black;
+}
+.tabel_profil{
+    font-size: 18pt;
+}
+.btnprofil a{
+    text-decoration: none;
+    color: chocolate;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.btnprofil a:hover{
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px white;
+}
+/*CSS Layout Riwayat User*/
+.isikontenriwayat{
+    position:relative;
+    text-align:center;
+    margin: 50pt 150pt;
+    padding: 10px;
+    width: 800px;
+    background-color:rgba(0,0,0,0.8);
+    border-radius: 10%;
+    box-shadow: 0 0 10px black;
+}
+.tabelriwayatuser{
+    font-family: 'Lucida Sans';
+    font-size: 14pt;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.tabelriwayatuser th{
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+}
+.tabelriwayatuser td{
+    border-bottom: 3px solid chocolate;
+}
+/*CSS Layout Konsultasi*/
+.kontenkonsultasi{
+    position:relative;
+    text-align:left;
+    margin: 50pt 200pt;
+    padding: 40px;
+    width: 700px;
+    background-color:rgba(0,0,0,0.8);
+    border-radius: 10%;
+    box-shadow: 0 0 10px black;
+}
+.tabelkonsultasi{
+    align-items: center;
+    font-family: 'Lucida Sans';
+    font-size: 14pt;
+}
+.tabelkonsultasi th {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 20%;
+}
+.tabelkonsultasi td {
+    border-bottom: 2px solid chocolate;
+}
+/*CSS Layout Grup Halaman Admin*/
+.navbaradmin{
+    position: fixed;
+    background-color:rgba(244, 164, 96,0.6);
+    width: 13%;
+    height: 96%;
+    border-radius: 0px 60px 60px 0px ;
+    border: 2px solid saddlebrown;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    left: 0;
+    top: 0;
+}
+.kontenadmin{
+    width: 75%;
+    height: 100%;
+    float: right;
+    border-radius: 30px;
+    background-color: rgba(240, 230, 140,0.8);
+    padding: 5px;
+    margin-right: 60px;
+    margin-top: 60px;
+}
+.navbaradmin p{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.navbaradmin a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Lucida Sans';
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid saddlebrown;
+}
+.admdtker{
+    padding-right: 31px;
+}
+.admdtgej{
+    padding-right: 69px;
+}
+.admdtbp{
+    padding-right: 10px;
+}
+.navbaradmin button{
+    margin-left: 25px;
+    margin-top: 430px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgba(244, 164, 96,0);
+    font-size: x-large;
+    font-family: cursive;
+}
+.navbaradmin button:hover{
+    transition: all 0.8s;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+.navbaradmin a:hover{
+    transition: all 0.8s;
+    background-color: rgba(139, 69, 19, 0.5);
+    border-top: 2px solid saddlebrown;
+    border-radius: 0% 50% 50% 0%;
+}
+.aktifnavadm{
+    background-color: rgba(139, 69, 19, 0.5);
+}
+.homepage{
+    width: 40%;
+    margin-right: 300px;
+    margin-top: 200px;
+}
+/*CSS halaman admin section*/
+.lytgejala ,.lytkerusakan ,.lytbasis{
+    width: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-right: 150px;
+    float: right;
+    border-radius: 30px;
+    background-color: rgba(240, 230, 140,0.8);
+    margin-top: 60px;
+}
+.lytgejala .tblgejala ,.lytkerusakan .tblkerusakan,.lytbasis .tblbasis{
+    font-family: 'Lucida Sans';
+    font-size: 14pt;
+    color: black;
+    margin-top: 15px;
+}
+.lytgejala .tblgejala td, .lytkerusakan .tblkerusakan td,.lytbasis .tblbasis td{
+    padding: 5px;
+    border-bottom: 2px solid saddlebrown;
+}
+.lytgejala .tblgejala td a ,.lytkerusakan .tblkerusakan td a,.lytbasis .tblbasis td a{
+    text-decoration: none;
+    padding: 3px;
+    color: saddlebrown;
+}
+.lytgejala .tblgejala td a:hover ,.lytkerusakan .tblkerusakan td a:hover,.lytbasis .tblbasis td a:hover{
+    background-color: rgba(139, 69, 19,0.5);
+    color: rgb(240, 230, 140);
+    border-radius: 30%;
+    transition: all 0.8s;
+}
+.tmbhgejala ,.tmbhkerusakan ,.tmbhbasis{
+    text-decoration: none;
+    padding: 3px;
+    border: outset saddlebrown;
+    color: saddlebrown;
+}
+.tmbhgejala:hover ,.tmbhkerusakan:hover ,.tmbhbasis:hover{
+    background-color:rgba(139, 69, 19,0.5);
+    color: rgb(240, 230, 140);
+    transition: all 0.5s;
+}
+/*CSS halaman admin tambah data section*/
+.tbltbhgjl ,.tbltbhkrskn ,.tbltbhbss{
+    font-size: 14pt;
+    font-family: Verdana;
+    text-transform: uppercase;
+}
+.tbltbhgjl input, .tbltbhkrskn input ,.tbltbhbss input ,.tbltbhbss select{
+    border: none;
+    background-color: none;
+    font-size: 14pt;
+    color:black;
+}
+.btndtgjl ,.btndtkrskn ,.btndtbss{
+    border: outset saddlebrown;
+    color: black;
+    background-color: transparent;
+    padding: 5px;
+    margin-top: 10px;
+}
+.btndtgjl:hover ,.btndtkrskn:hover ,.btndtbss:hover{
+    background-color: rgba(139, 69, 19,0.5);
+    color: white;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+/*CSS Button Proses Identifikasi*/
+.konsul {
+    border: outset saddlebrown;
+    color: white;
+    font-size: 14pt;
+    margin: 10px;
+    background-color: transparent;
+}
+.konsul:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.8s;
+}
