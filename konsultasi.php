@@ -116,6 +116,7 @@ $no = 1;
                 }
                 
                 if((isset($k_cf))AND(isset($k_krskn))AND(isset($k_idkr))AND(count($k_cf)==count($k_krskn))AND(count($k_cf)==count($k_idkr))){ // Coding Untuk Menampilkan Hasil dan memasukkannya ke dalam database
+                    echo "Gejala yang dipilih : ".$t_gejala."<br>";
                     echo "<hr>"."Kemungkinan kerusakan-kerusakan pada mesin Anda"."<br>";
                     $bts_hitung = count($k_cf);
                     for($i=0;$i < $bts_hitung;$i++){
